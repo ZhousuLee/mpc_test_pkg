@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+	<node name="mpc_test_node" pkg="mpc_test_pkg" type="mpc_test_node">
+			<rosparam file="$(find mpc_test_pkg)/cfg/mpc_param.yaml" command = "load"/>
+	</node>
+	
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find mpc_test_pkg)/launch/mpc_test_rviz_v1.rviz" />
+
+</launch>

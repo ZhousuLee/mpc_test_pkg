@@ -1,0 +1,16 @@
+Np: 15
+Nc: 10
+sample_time: 0.05
+basic_state_size: 3
+basic_control_size: 2
+relax_factor: 5.0
+relax_factor_max: 10.0
+car_length: 2.6
+wheel_single_direction_max_degree: 30.0
+wheel_single_direction_max_vel: 40.0
+vx_max: 10.0
+ax_max: 1.0
+mpc_max_iteration: 1000
+mpc_eps: 0.05
+goal_threshold: 0.04
+trajectory_type: "circle"
